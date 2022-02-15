@@ -1,10 +1,10 @@
 import React from "react"
 
 
-export default function Roll(){
+export default function Roll(props){
     return(
             <div className="game--button--container">
-                <button className="game--button--button">Roll</button>
+                <button onClick={props.onClick} className="game--button--button">Roll</button>
             </div>
     )
 }
