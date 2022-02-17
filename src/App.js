@@ -60,10 +60,8 @@ React.useEffect(() => {
       }))
     }else{
       if(rolls < highScore){
-        console.log('set new high')
         setHighScore(rolls)
-        console.log(`Set high to roll ${highScore}`)
-        localStorage.setItem('score', highScore)
+        localStorage.setItem('score', rolls)
       }
       setRolls(0)
       setTenzies(false)
